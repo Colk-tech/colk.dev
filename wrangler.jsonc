@@ -3,7 +3,17 @@
   "name": "my-portfolio",
   "compatibility_date": "2026-10-23",
   "observability": {
-    "enabled": true
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
   },
   "assets": {
     "directory": "public"
